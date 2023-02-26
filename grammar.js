@@ -49,8 +49,20 @@ module.exports = grammar({
     ),
 
     setting_value: $ => choice(
-      $._quoted_value,
+      $._comma_separated_values,
       $._value,
+    ),
+
+    _comma_separated_values: $ => (
+      seq(
+        repeat1(seq($._value, ",")),
+        ","
+      )
+    ),
+
+    _value: $ => choice(
+      $._quoted_value,
+      $._exact_value,
     ),
 
     _quoted_value: $ => seq(
@@ -59,9 +71,17 @@ module.exports = grammar({
       /"/,
     ),
 
-    _value: $ => choice(
+    _exact_value: $ => choice(
       /.+/,
       $._bool,
+    ),
+
+    _comma_value: $ => seq(
+      repeat1(choice(
+        $._quoted_value,
+        $._value,
+        ","
+      ))
     ),
 
     _bool: $ => choice(
