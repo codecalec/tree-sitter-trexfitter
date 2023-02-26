@@ -1,0 +1,134 @@
+[
+  {
+    "type": "block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "block_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "setting",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "block_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "setting",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "setting_name",
+          "named": true
+        },
+        {
+          "type": "setting_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "setting_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "setting_value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "Fit",
+    "named": false
+  },
+  {
+    "type": "Job",
+    "named": false
+  },
+  {
+    "type": "Limit",
+    "named": false
+  },
+  {
+    "type": "Morphing",
+    "named": false
+  },
+  {
+    "type": "Multifit",
+    "named": false
+  },
+  {
+    "type": "NormFactor",
+    "named": false
+  },
+  {
+    "type": "Options",
+    "named": false
+  },
+  {
+    "type": "Region",
+    "named": false
+  },
+  {
+    "type": "Sample",
+    "named": false
+  },
+  {
+    "type": "ShapeFactor",
+    "named": false
+  },
+  {
+    "type": "Significance",
+    "named": false
+  },
+  {
+    "type": "Systematic",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
+  },
+  {
+    "type": "identifier",
+    "named": true
+  }
+]
