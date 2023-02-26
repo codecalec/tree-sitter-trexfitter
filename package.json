@@ -19,7 +19,11 @@
       "scope": "source.trf",
       "file-types": [
         "trf"
-      ]
+      ],
+      "highlights": [
+        "queries/highlights.scm"
+      ],
+      "injection-regex": "trf"
     }
   ]
 }
